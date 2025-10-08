@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <base target="_self">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <meta name="description" content="Simple and beautiful currency converter tool">
+    <link rel="stylesheet" href="currency_style.css">
+</head>
+<body>
+<div class="container">
+    <header class="header">
+        <h1>Currency Converter</h1>
+        <p>Convert currencies with real-time accuracy</p>
+    </header>
+
+    <main>
+        <div class="converter-card">
+            <!-- Amount -->
+            <div class="input-group">
+                <label for="amount">Amount</label>
+                <input type="number" id="amount" class="input-field" placeholder="Enter amount..." step="0.01" min="0">
+            </div>
+
+            <!-- From / To -->
+            <div class="row">
+                <div class="input-group">
+                    <label for="from">From</label>
+                    <select id="from" class="select-field"></select>
+                </div>
+                <div class="input-group">
+                    <label for="to">To</label>
+                    <select id="to" class="select-field"></select>
+                </div>
+            </div>
+
+            <!-- Auto Update -->
+            <div class="auto-update">
+                <input type="checkbox" id="autoUpdate">
+                <label for="autoUpdate">Auto-update on input change</label>
+            </div>
+
+            <!-- Convert Button -->
+            <button id="convertBtn" class="convert-btn">Convert Currency</button>
+
+            <!-- Result -->
+            <div class="result-container">
+                <div class="result-label">Converted Amount</div>
+                <div class="result-value">
+                    <span class="currency-symbol" id="toSymbol">$</span>
+                    <span id="result">0.00</span>
+                </div>
+                <div class="rate-note" id="rateNote">Rate: —</div>
+                <div class="error" id="error" style="display:none;"></div>
+            </div>
+        </div>
+    </main>
+</div>
+
+<script src="converter.js"></script>
+
+</body>
+</html>

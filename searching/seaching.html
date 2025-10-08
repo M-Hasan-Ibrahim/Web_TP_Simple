@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Student & Module Search</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="seaching_style.css">
+</head>
+<body>
+  <main class="app" id="app">
+    <header>
+      <h1>Student & Module Directory</h1>
+      <p>Search by <strong>student name</strong> or filter by <strong>module</strong> to find what you need</p>
+    </header>
+
+    <section class="toolbar" aria-label="search filters">
+      <div class="input-wrapper">
+        <span class="input-icon">👤</span>
+        <input id="searchStudent" class="input" type="search" placeholder="Search by student name..." aria-label="Search by student" />
+      </div>
+      <div class="input-wrapper">
+        <span class="input-icon">📚</span>
+        <input id="searchModule" class="input" type="search" placeholder="Search by module..." aria-label="Search by module" />
+      </div>
+    </section>
+
+    <section id="status" class="status hidden">No matching students found. Try a different search.</section>
+
+    <section id="cards" class="cards" aria-live="polite">
+      <article class="card" data-name="Alice Martin" data-modules="Web; Algorithms; Data Viz">
+        <div class="name">Alice Martin</div>
+        <div class="modules-label">Modules</div>
+        <div class="modules">
+          <span class="chip">Web</span>
+          <span class="chip">Algorithms</span>
+          <span class="chip">Data Viz</span>
+        </div>
+      </article>
+
+      <article class="card" data-name="Bilal Haddad" data-modules="Networks; Security; Web">
+        <div class="name">Bilal Haddad</div>
+        <div class="modules-label">Modules</div>
+        <div class="modules">
+          <span class="chip">Networks</span>
+          <span class="chip">Security</span>
+          <span class="chip">Web</span>
+        </div>
+      </article>
+
+      <article class="card" data-name="Chloé Dupont" data-modules="Machine Learning; Data Viz; Probability">
+        <div class="name">Chloé Dupont</div>
+        <div class="modules-label">Modules</div>
+        <div class="modules">
+          <span class="chip">Machine Learning</span>
+          <span class="chip">Data Viz</span>
+          <span class="chip">Probability</span>
+        </div>
+      </article>
+
+      <article class="card" data-name="Hadi Jaber" data-modules="Security; Cryptography; Networks">
+        <div class="name">Hadi Jaber</div>
+        <div class="modules-label">Modules</div>
+        <div class="modules">
+          <span class="chip">Security</span>
+          <span class="chip">Cryptography</span>
+          <span class="chip">Networks</span>
+        </div>
+      </article>
+
+      <article class="card" data-name="Emma Leblanc" data-modules="SPAI; IGR">
+        <div class="name">Mohamad Hassan Ibrahim</div>
+        <div class="modules-label">Modules</div>
+        <div class="modules">
+          <span class="chip">SPAI</span>
+          <span class="chip">IGR</span>
+        </div>
+      </article>
+
+      <article class="card" data-name="Farid Nasser" data-modules="Algorithms; Probability; Optimization">
+        <div class="name">Farid Nasser</div>
+        <div class="modules-label">Modules</div>
+        <div class="modules">
+          <span class="chip">Algorithms</span>
+          <span class="chip">Probability</span>
+          <span class="chip">Optimization</span>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <script src="search.js">
+    
+  </script>
+</body>
+</html>
