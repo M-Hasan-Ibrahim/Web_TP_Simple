@@ -1,0 +1,41 @@
+init.js
+
+init() — Bootstraps the page: populates currency selects, sets defaults (EUR→USD, amount=100), updates the symbol, wires listeners, and triggers the first calculation.
+
+DOMContentLoaded listener — Calls init() once the DOM is ready.
+
+ui.js
+
+$(id) — Shorthand for document.getElementById(id).
+
+formatNumber(n, d=2) — Formats a number with d decimals using locale separators.
+
+showError(msg) — Shows an error message in #error.
+
+clearError() — Clears/hides the #error message.
+
+info(msg) — Writes an info note into #rateNote.
+
+currencySymbolGuess(code) — Returns a display symbol for a currency code (e.g., $, €, ₺).
+
+updateToSymbol(code) — Updates the target currency symbol in #toSymbol.
+
+populateSelect(select, symbols) — Fills a <select> with options from symbols, preferring PREFERRED first.
+
+updateResult() — Reads inputs, performs conversion via convert(), shows result/rate note, alerts if offline-limited.
+
+handleAutoUpdate() — Toggles live-update listeners on inputs/selects based on the #autoUpdate checkbox.
+
+handleConversion() — Runs a conversion on demand (button click).
+
+core.js
+
+LIVE_API(base) — Builds the live exchange-rate API URL for the given base currency.
+
+fetchWithTimeout(url, ms) — Fetch wrapper that aborts after ms milliseconds (no cache).
+
+getRates(base) — Returns rates for base: uses cache if available, else fetches live; on failure, provides fixed offline EUR↔USD only.
+
+convert(amount, from, to) — Converts amount from → to using getRates, returning { result, rate, date, source }.
+
+(Notes: PREFERRED, SYMBOLS, and the lastBase/lastRates/lastDate variables are configuration/state, not methods.)

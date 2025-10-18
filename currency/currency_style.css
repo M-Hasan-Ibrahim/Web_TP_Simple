@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #6780ed 0%, #764ba1 100%);
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -57,8 +57,7 @@ body {
     font-size: 0.9rem;
 }
 
-.input-field,
-.select-field {
+.input-field, .select-field {
     width: 100%;
     padding: 15px;
     border: 2px solid #e2e8f0;
@@ -68,8 +67,7 @@ body {
     background: #f8fafc;
 }
 
-.input-field:focus,
-.select-field:focus {
+.input-field:focus, .select-field:focus {
     outline: none;
     border-color: #667eea;
     background: white;

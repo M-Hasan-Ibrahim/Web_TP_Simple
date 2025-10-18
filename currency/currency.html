@@ -17,13 +17,13 @@
 
     <main>
         <div class="converter-card">
-            <!-- Amount -->
+            
             <div class="input-group">
                 <label for="amount">Amount</label>
                 <input type="number" id="amount" class="input-field" placeholder="Enter amount..." step="0.01" min="0">
             </div>
 
-            <!-- From / To -->
+            
             <div class="row">
                 <div class="input-group">
                     <label for="from">From</label>
@@ -35,16 +35,16 @@
                 </div>
             </div>
 
-            <!-- Auto Update -->
+            
             <div class="auto-update">
                 <input type="checkbox" id="autoUpdate">
                 <label for="autoUpdate">Auto-update on input change</label>
             </div>
 
-            <!-- Convert Button -->
+            
             <button id="convertBtn" class="convert-btn">Convert Currency</button>
 
-            <!-- Result -->
+            
             <div class="result-container">
                 <div class="result-label">Converted Amount</div>
                 <div class="result-value">
@@ -58,7 +58,10 @@
     </main>
 </div>
 
-<script src="converter.js"></script>
+<!-- <script src="converter.js"></script> -->
+<script src="converter/core.js"></script>
+<script src="converter/init.js"></script>
+<script src="converter/ui.js"></script>
 
 </body>
 </html>
