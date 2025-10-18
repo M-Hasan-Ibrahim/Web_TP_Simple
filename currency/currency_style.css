@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #6780ed 0%, #764ba1 100%);
+    background: linear-gradient(135deg, #3958e3 0%, #e10b0b 100%);
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -82,7 +82,7 @@ body {
 
 .convert-btn {
     width: 100%;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #3958e3 0%, #e10b0b 100%);
     color: white;
     border: none;
     padding: 15px;

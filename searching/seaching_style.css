@@ -6,7 +6,7 @@
 
 body {
   font-family: 'Segoe UI', system-ui, -apple-system, Roboto, sans-serif;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #3958e3 0%, #e10b0b 100%);
   min-height: 100vh;
   padding: 40px 20px;
   color: #1f2937;
@@ -47,7 +47,6 @@ header p strong {
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 16px;
   margin-bottom: 32px;
-  animation: fadeInUp 0.6s ease;
 }
 
 .input-wrapper {
@@ -91,7 +90,6 @@ header p strong {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 20px;
-  animation: fadeInUp 0.8s ease;
 }
 
 .card {
@@ -175,7 +173,6 @@ header p strong {
   color: #6b7280;
   font-size: 1.2rem;
   box-shadow: 0 8px 24px rgba(0,0,0,0.15);
-  animation: fadeIn 0.4s ease;
 }
 
 .status::before {
@@ -187,35 +184,4 @@ header p strong {
 
 .hidden { 
   display: none !important; 
-}
-
-@keyframes fadeInDown {
-  from {
-    opacity: 0;
-    transform: translateY(-30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
 }
