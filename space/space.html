@@ -11,24 +11,19 @@
     <h1>The Last Frontier</h1>
 
     <div id="canvas" class="canvas" aria-label="space canvas">
-      <!-- Use local image if present; otherwise fallback src will load -->
-      <img id="ship" class="ship"
-           src="media/spaceship.png"
-           onerror="this.onerror=null;this.src='https://perso.telecom-paristech.fr/elc/web/spaceship.png';"
-           alt="Spaceship" />
+      <img id="ship" class="ship" src="media/spaceship.png" alt="Spaceship" />
     </div>
 
     <div class="toolbar">
       <button id="startBtn" class="btn" type="button">Start</button>
       <button id="stopBtn" class="btn ghost" type="button">Stop</button>
+      <button id="flipBtn"  class="btn ghost" type="button">Flip</button>
 
       <label class="speed">
         Speed
         <input id="speedRange" type="range" min="50" max="600" step="10" value="250" />
       </label>
     </div>
-
-    <p class="hint">Tip: Click the ship to flip its orientation.</p>
   </main>
 
   <script src="js/animate.js"></script>
